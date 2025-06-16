@@ -1,0 +1,11 @@
+<script>
+
+let q = fetch("https://suggestqueries.google.com/complete/search?client=firefox&q=hoi")
+.then((response) => {
+return response.text();
+})
+.then((data) => {
+document.body.innerHTML = data;
+});
+
+</script>
